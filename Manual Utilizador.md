@@ -7,7 +7,8 @@
 ### Acrónimos e convenções usadas
 
 __Lista:__  Conjunto de valores envolvidos por parêntesis. Ex.: ( a b c )
-__Nó:__ Estrutura de dados que guarda informação do jogo actual, nomeadamente o estado do tabuleiro actual, valores heurísticos e o seu no antecessor.Heurística: Cálculo para atribuir um valor concreto a um nó.
+__Nó:__ Estrutura de dados que guarda informação do jogo actual, nomeadamente o estado do tabuleiro actual, valores heurísticos e o seu no antecessor.
+__Heurística:__ Cálculo para atribuir um valor concreto a um nó.
 Ex.: h = número de peças existentes no tabuleiro
 
 De notar, em LISP as funções são chamadas da seguinte forma: 
@@ -31,5 +32,5 @@ Além do início do programa através da função </em>*start*, todo o input dir
 É contudo, possível adicionar mais tabuleiros ao programa através do ficheiro 3.googleusercontent.com/7qpoLOle51l0yrRLIpBgpmIWxGQXgiZC-9SBmEV36WQZF7SYAMFDnNJbbGqBKlzm61sag0agjBA)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMTE3NzY1XX0=
+eyJoaXN0b3J5IjpbNTA5NDk2MjE1LDEzMDExNzc2NV19
 -->
