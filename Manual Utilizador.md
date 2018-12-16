@@ -38,6 +38,7 @@ O presente programa inicia com um tabuleiro escolhido pelo utilizador e aplica u
 <p><img src="https://lh3.googleusercontent.com/P0n2GFRhErYECHN1pUmWm4StMZ9FiWzwO7GxhXcyGKkjKIXJxtrfkG0FSUmitBipZYkUPxow8-A" alt="enter image description here"></p>
 <p>Para navegar nos menus basta inserir o número desejado e premir <em>*Enter</em>.</p>
 <h3 id="input">Input
+
 Além do início do programa através da função <em>*start</em>*, todo o input directo no programa é efectuado apenas com os algarismos correspondentes ás acções do menu actual.</p>
 <p>
 
@@ -74,5 +75,5 @@ O algoritmo A* é um algoritmo de procura <strong>informada</strong>__, que faz 
 <img src="](https://lh3.googleusercontent.com/7qpoLOle51l0yrRLIpBgpmIWxGQXgiZC-9SBmEV36WQZF7SYAMFDnNJbbGqBKlzm61sag0agjBA" alt="enter image description here"></p>)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEzOTUxMzA1XX0=
+eyJoaXN0b3J5IjpbMTY3Njk3OTIyNyw0MTM5NTEzMDVdfQ==
 -->
