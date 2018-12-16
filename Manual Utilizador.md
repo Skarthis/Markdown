@@ -1,9 +1,6 @@
 
 # Inteligência Artificial - Adji‒boto*
 ## Manual de Utilizador 
-### Índice
-
- - Acrónimos e convenções usadas
 
 
 ### Acrónimos e convenções usadas
@@ -89,5 +86,5 @@ O algoritmo A* é um algoritmo de procura __informada__, que faz uso de uma dada
 ![enter image description here](https://lh3.googleusercontent.com/7qpoLOle51l0yrRLIpBgpmIWxGQXgiZC-9SBmEV36WQZF7SYAMFDnNJbbGqBKlzm61sag0agjBA)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NDc1Mjk1Nl19
+eyJoaXN0b3J5IjpbLTIwMTkwMzgzMzQsMTE3NDc1Mjk1Nl19
 -->
