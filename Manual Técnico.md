@@ -55,9 +55,19 @@ Função que recebe uma posição *l c* e retorna a posição seguinte de acordo
 ##### Play
 ```javascript
 (defun play (l c board)
-  (replace-a c l (play-aux (increment-all (distribute(cell l c board) l c) board)(car(last (distribute(cell l c board) l c))))))
+  (replace-a c l (play-aux (increment-all 
+  (distribute(cell l c board) l c) board)
+  (car(last (distribute(cell l c board) l c))))))
+(defun play-aux (board pos)
+   (let ((var (cell (first pos)(second pos) board)))
+     (cond
+      ((or (= 1 var)(= 3 var)(= 5 var))(replace-a (second pos)(first pos) board))
+      (t board))))
 ```
+Função que efectua uma jogada no tabuleiro, remove as peças na posição *l c* e distribui pelas casas seguintes.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NzQ5NTQ2NSwxMjA2NjU2MjEwLDMwND
-k2Njg5OCwxNjMwMTg1MjM3XX0=
+eyJoaXN0b3J5IjpbOTk0MTkzOTQ2LDEyMDY2NTYyMTAsMzA0OT
+Y2ODk4LDE2MzAxODUyMzddfQ==
 -->
