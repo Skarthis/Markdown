@@ -98,10 +98,10 @@ Função que conta todas as peças existentes no tabuleiro actual.
 
 ### Procura
 
-O ficheiro procura
+Ficheiro que contem as funções relativas aos algoritmos de procura e todas as funções que os suportam, como a construção e a geração de nós, heurísticas
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE4MjEwMTUsLTY5NzIwMDEwNCwxMjA2Nj
-U2MjEwLDMwNDk2Njg5OCwxNjMwMTg1MjM3XX0=
+eyJoaXN0b3J5IjpbLTEyOTQzNTM2ODAsLTY5NzIwMDEwNCwxMj
+A2NjU2MjEwLDMwNDk2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
