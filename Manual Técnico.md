@@ -229,9 +229,25 @@ Função que define o __path__ para o ficheiro *problemas.dat*.
         	(next (read file nil 'eof) (read file nil 'eof)))
                 ((equal next 'eof) (reverse result)))))
 ```
-Funcção que le 
+Função que lê os tabuleiros do ficheiro *problemas.dat*
+
+##### Read-board
+```javascript
+(defun read-board(backMenu)
+    (progn (boards)
+      (let ((opt (read)))
+           (cond ((eq opt '0) (funcall backMenu))
+                 ((not (numberp opt)) (progn (format t "Insira uma opção válida") (read-board backMenu))) 
+                 (t
+                  (let ((boards-list (read-boards)))
+                  (if (or (< opt 0) (> opt (length boards-list))) (progn (format t "Insira uma opção válida") (read-board backMenu))
+                                 (list opt (nth(1- opt) boards-list))
+                  )))))))
+```
+Função que 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzQyMjE1MjEsLTY3NTAzNDg2OCwyMD
+eyJoaXN0b3J5IjpbLTE5NDU2OTc5MDIsLTY3NTAzNDg2OCwyMD
 I5MTI2MjksLTk1MDk0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYy
 MTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
