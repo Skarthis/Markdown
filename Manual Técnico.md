@@ -117,9 +117,11 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
 ##### Heuristic-a
 ```javascript
 (defun heuristic-a (node)
-  (- (count-pieces node) (-(count-pieces(get-origin-node node))(count-pieces node))))
+  (- (count-pieces node)
+   (-(count-pieces(get-origin-node node))(count-pieces node))))
   ```
+  Função que define a heurística: 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTQxNDUyMDEsLTY5NzIwMDEwNCwxMj
-A2NjU2MjEwLDMwNDk2Njg5OCwxNjMwMTg1MjM3XX0=
+eyJoaXN0b3J5IjpbMjc1MzI1NDMzLC02OTcyMDAxMDQsMTIwNj
+Y1NjIxMCwzMDQ5NjY4OTgsMTYzMDE4NTIzN119
 -->
