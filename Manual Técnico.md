@@ -156,10 +156,10 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
                                (change-new-value node (get-node-g expanded-node)
                                               (get-node-h expanded-node))) nil)) expanded-list)))
 ```
-Função que compara o nó *n
+Função que compara o nó *node* aos nós existentes na lista 
      
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDE4NTk2NSwyMDI5MTI2MjksLTk1MD
+eyJoaXN0b3J5IjpbMTY0OTIxODQ2OCwyMDI5MTI2MjksLTk1MD
 k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
 LDE2MzAxODUyMzddfQ==
 -->
