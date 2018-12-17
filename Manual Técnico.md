@@ -146,20 +146,20 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
   
   Funções que geram os nós sucessores para os diferentes algoritmos de procura.
 
-##### Update-open
+##### Update-node
 
 ```javascript
-(defun update-open (expanded-list open parent-node)
-  (mapcar #'(lambda(node)
-  (let (
-    (open-list (update-node node expanded-list)))
-     (if (null open-list) node 
-     (change-parent (car open-list) parent-node))))open))
+(defun update-node (node expanded-list)
+  (remove-nil(mapcar #'(lambda(expanded-node)
+                        (if (equal (get-node-state node)(get-node-state expanded-node)) 
+                             (if (>= (get-node-value node)(get-node-value expanded-node)) nil 
+                               (change-new-value node (get-node-g expanded-node)
+                                              (get-node-h expanded-node))) nil)) expanded-list)))
 ```
-Função que compara 
+Função que compara o nó *n
      
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyOTEyNjI5LC05NTA5NDM3ODMsLTY5Nz
-IwMDEwNCwxMjA2NjU2MjEwLDMwNDk2Njg5OCwxNjMwMTg1MjM3
-XX0=
+eyJoaXN0b3J5IjpbLTI3NDE4NTk2NSwyMDI5MTI2MjksLTk1MD
+k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
+LDE2MzAxODUyMzddfQ==
 -->
