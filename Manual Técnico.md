@@ -10,9 +10,9 @@ o programa está dividido em 4 ficheiros:
  - puzzle.lisp - implementação da resolução do problema e operadores  
  - procura.lisp - implementação dos algoritmos de procura e auxiliares necessários
  - projecto.lisp - interacção com o utilizador
- - problemas.dat - ficheiro 
+ - problemas.dat - ficheiro onde se encontram os problemas
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDc2NzQ1MywzMDQ5NjY4OTgsMTYzMD
+eyJoaXN0b3J5IjpbMjA5NjI3MTk3MSwzMDQ5NjY4OTgsMTYzMD
 E4NTIzN119
 -->
