@@ -17,7 +17,7 @@ O objectivo do programa é efectuar e mostrar ao utilizador a sequência de joga
 ### Puzzle
 Neste  ficheiro encontram-se as funções especificas ao jogo, tais como a distribuição das pecas durante uma jogada, a contagem de pecas num tabuleiro e a verificação de solução.
 
-####
+##### Distribute
 ``` javascript
  (defun distribute (n l c)
   (cond
@@ -25,8 +25,8 @@ Neste  ficheiro encontram-se as funções especificas ao jogo, tais como a distr
    (t(cons (next-position l c)(distribute (1- n)
    (first(next-position l c))(second(next-position l c)))))))
 ```
-
+Função que recebe uma posicao no tabuleiro, linha coluna *l c* e um *n* que corresponde ao numero de peças a jogar
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MzA2Njc2OSwxMjA2NjU2MjEwLDMwND
+eyJoaXN0b3J5IjpbLTE2OTcyMzQ2MSwxMjA2NjU2MjEwLDMwND
 k2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
