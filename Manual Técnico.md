@@ -197,9 +197,11 @@ Algoritmo de procura em profundidade. Recebe o nome da função geradora _expand
        (A* expandFunction heuristic new-open (remove-duplicated-aux (concatenate 'list closed (list chosen-node)) 
 												updated-closed) (1+ expanded-nodes)))))))	
 ```
+O algoritmo A* tem uma estrutura similar aos anteriores. Sendo a diferença entre o A*, que é um algoritmo de procura informada, e os anteriores que o A* as
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDc5NzE2OTAsMjAyOTEyNjI5LC05NT
-A5NDM3ODMsLTY5NzIwMDEwNCwxMjA2NjU2MjEwLDMwNDk2Njg5
-OCwxNjMwMTg1MjM3XX0=
+eyJoaXN0b3J5IjpbLTQyNTI0MjQ5MSwyMDI5MTI2MjksLTk1MD
+k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
+LDE2MzAxODUyMzddfQ==
 -->
