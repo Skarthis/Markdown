@@ -164,9 +164,27 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
 ```
 Algoritmo de procura em largura.
 
-     
+##### Depth-first search
+
+```javascript
+(defun dfs(expandFunction max-depth open &optional (closed '()))
+  (cond
+   ((= (length open) 0) nil)
+   ((> (calculate-node-depth (car open)) max-depth) (dfs expandFunction max-depth (cdr open) (concatenate 'list closed (car open))))
+   (t
+     (let* ((chosen-node (car open))
+            (expanded-list (funcall expandFunction chosen-node)))
+      (if (solutionp chosen-node)
+        (list (get-solution-states chosen-node) (calculate-node-depth chosen-node) (length open) (length closed))
+		;; sets sucessors in open and sets current node to closed
+       (dfs expandFunction max-depth (concatenate 'list expanded-list(cdr open))
+		(concatenate 'list closed chosen-node)))))))
+```
+Algoritmo de procura em profundidade. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE2OTc4OTM4LDIwMjkxMjYyOSwtOTUwOT
+eyJoaXN0b3J5IjpbMjg5MDI5MTU3LDIwMjkxMjYyOSwtOTUwOT
 QzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIxMCwzMDQ5NjY4OTgs
 MTYzMDE4NTIzN119
 -->
