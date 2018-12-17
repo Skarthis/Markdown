@@ -331,10 +331,12 @@ Função que executa um jogo, depois de o utilizador ter feito as selecções ne
   ))
 ```
 ### Resultados
-Estatísticas obtidas da execução dos algoritmos de procura com os vários problemas, a heu
+Estatísticas obtidas da execução dos algoritmos de procura com os vários problemas, a heurística usada foi a fornecida no enunciado.
+
+| Tabuleiro | Algoritmo | Nós Gerados | Nós Expandi
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMDExMDQwOCwtNjc1MDM0ODY4LDIwMj
+eyJoaXN0b3J5IjpbLTQ1MTM3MzI5MSwtNjc1MDM0ODY4LDIwMj
 kxMjYyOSwtOTUwOTQzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIx
 MCwzMDQ5NjY4OTgsMTYzMDE4NTIzN119
 -->
