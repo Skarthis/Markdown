@@ -210,10 +210,12 @@ O algoritmo A* tem uma estrutura similar aos anteriores. Sendo a diferença entr
 Função usada pelo A* para escolher o nó de menor custo numa dada lista de abertos.
 
 ### Projecto
-Este ficheiro constitui a interacção com o utilizador 
+Este ficheiro constitui a interacção com o utilizador, e a criação de estatísticas gravadas em *resultados.dat*. Assim como ler os problemas presentes no ficheiro *problemas.dat*.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNzM4NTEyOSwyMDI5MTI2MjksLTk1MD
+eyJoaXN0b3J5IjpbLTg3MzI4Mjc1MywyMDI5MTI2MjksLTk1MD
 k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
 LDE2MzAxODUyMzddfQ==
 -->
