@@ -146,20 +146,27 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
   
   Funções que geram os nós sucessores para os diferentes algoritmos de procura.
 
-##### Update-node
+##### Breadth-first search
 
 ```javascript
-(defun update-node (node expanded-list)
-  (remove-nil(mapcar #'(lambda(expanded-node)
-                        (if (equal (get-node-state node)(get-node-state expanded-node)) 
-                             (if (>= (get-node-value node)(get-node-value expanded-node)) nil 
-                               (change-new-value node (get-node-g expanded-node)
-                                              (get-node-h expanded-node))) nil)) expanded-list)))
+(defun bfs(expandFunction open &optional (closed '()))
+  (let ((open-size (length open)))
+   (cond
+    ((= open-size 0) nil)
+    (t
+     (let* ((chosen-node (car open))
+            (expanded-list (funcall expandFunction chosen-node)))
+      (if (solutionp chosen-node)
+       (list (get-solution-states chosen-node) (length open) (length closed))
+		;; sets sucessors in open and sets current node to closed
+        (bfs expandFunction (concatenate 'list (cdr open) (remove-nil (remove-duplicated expanded-list open closed)))
+			(concatenate 'list closed (list chosen-node)))))))))
 ```
+Algoritmo de procura em largura.
 
      
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjY1MzU4NSwyMDI5MTI2MjksLTk1MD
-k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
-LDE2MzAxODUyMzddfQ==
+eyJoaXN0b3J5IjpbODE2OTc4OTM4LDIwMjkxMjYyOSwtOTUwOT
+QzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIxMCwzMDQ5NjY4OTgs
+MTYzMDE4NTIzN119
 -->
