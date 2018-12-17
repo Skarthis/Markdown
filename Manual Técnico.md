@@ -341,13 +341,25 @@ Estatísticas obtidas da execução dos algoritmos de procura com os vários pro
 |2|BFS|- |- |- |- |- |- |
 |2|DFS|78 |60 | 0.24358975| 1.1421085| 0:55:14|0:55:14 |
 |2|A*|40 |35 |0.425 | 1.0852652| 1:7:33 |  1:7:33|
-|3 |BFS| | | | | | |
-|3 |DFS| | | | | | |
-|3 || | | | | | |
+|3 |BFS| 3983|1154 |0.0017574693 |3.0747845 |0:55:3 |0:55:4 |
+|3 |DFS| 28|18 |0.39285713 |1.1421085 |0:55:28 |0:55:28 |
+|3 |A*| | | | | | |
+|4 |BFS| | | | | | |
+|4 |DFS| | | | | | |
+|4 |A*| | | | | | |
+|5 |BFS| | | | | | |
+|5 |DFS| | | | | | |
+|5 |A*| | | | | | |
+|6 |BFS| | | | | | |
+|6 |DFS| | | | | | |
+|6 |A*| | | | | | |
+|7 |BFS| | | | | | |
+|7 |DFS| | | | | | |
+|7 |A*| | | | | | |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMjU4NDAyOSwtNjc1MDM0ODY4LDIwMj
+eyJoaXN0b3J5IjpbLTgwNzc1OTk2MCwtNjc1MDM0ODY4LDIwMj
 kxMjYyOSwtOTUwOTQzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIx
 MCwzMDQ5NjY4OTgsMTYzMDE4NTIzN119
 -->
