@@ -345,13 +345,13 @@ Estatísticas obtidas da execução dos algoritmos de procura com os vários pro
 |3 |DFS| 28|18 |0.39285713 |1.1421085 |0:55:28 |0:55:28 |
 |3 |A*| | | | | | |
 |4 |BFS| | | | | | |
-|4 |DFS| | | | | | |
+|4 |DFS|213|169 |0.2112676 |1.0852652 |0:55:39 |0:55:39 |
 |4 |A*| | | | | | |
 |5 |BFS| | | | | | |
-|5 |DFS| | | | | | |
+|5 |DFS|539 |435| 0.19480519|1.0284217 |0:56:21 |0:56:21 |
 |5 |A*| | | | | | |
 |6 |BFS| | | | | | |
-|6 |DFS| | | | | | |
+|6 |DFS|364 |291 | 0.2032967|1.0284217 |0:56:48 |0:56:48 |
 |6 |A*| | | | | | |
 |7 |BFS| | | | | | |
 |7 |DFS| | | | | | |
@@ -359,7 +359,7 @@ Estatísticas obtidas da execução dos algoritmos de procura com os vários pro
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzc1OTk2MCwtNjc1MDM0ODY4LDIwMj
-kxMjYyOSwtOTUwOTQzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIx
-MCwzMDQ5NjY4OTgsMTYzMDE4NTIzN119
+eyJoaXN0b3J5IjpbLTI4ODU0ODAwLC02NzUwMzQ4NjgsMjAyOT
+EyNjI5LC05NTA5NDM3ODMsLTY5NzIwMDEwNCwxMjA2NjU2MjEw
+LDMwNDk2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
