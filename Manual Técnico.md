@@ -98,10 +98,13 @@ Função que conta todas as peças existentes no tabuleiro actual.
 
 ### Procura
 
-Ficheiro que contem as funções relativas aos algoritmos de procura e todas as funções que os suportam, como a construção e a geração de nós, heurísticas
-
+Ficheiro que contem as funções relativas aos algoritmos de procura e todas as funções que os suportam, como a construção e a geração de nós, heurísticas.
+Um nó tem a seguinte estrutura:
+`<nó>::= ( <
+estado_do_tabuleiro > < nó-pai > g h
+`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTQzNTM2ODAsLTY5NzIwMDEwNCwxMj
-A2NjU2MjEwLDMwNDk2Njg5OCwxNjMwMTg1MjM3XX0=
+eyJoaXN0b3J5IjpbLTI4MzAzNzM2MiwtNjk3MjAwMTA0LDEyMD
+Y2NTYyMTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
