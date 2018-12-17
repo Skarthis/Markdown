@@ -50,9 +50,14 @@ Função que recebe o tabuleiro *board* e a lista retornada pela função *distr
   ((and (= l 0)(and (> c 0)(<= c 5)))(list l (1- c)))
   ((and (= l 1)(and (>= c 0)(< c 5)))(list l (1+ c)))))
 ```
-Função que 
+Função que recebe uma posição *l c* e retorna a posição seguinte de acordo com as regras do jogo, sentido de relógio inverso.
 
+##### Play
+```javascript
+(defun play (l c board)
+  (replace-a c l (play-aux (increment-all (distribute(cell l c board) l c) board)(car(last (distribute(cell l c board) l c))))))
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MjYzMjkxMywxMjA2NjU2MjEwLDMwND
+eyJoaXN0b3J5IjpbLTM4NzQ5NTQ2NSwxMjA2NjU2MjEwLDMwND
 k2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
