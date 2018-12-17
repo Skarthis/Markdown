@@ -121,7 +121,8 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
    (-(count-pieces(get-origin-node node))(count-pieces node))))
   ```
   Função que define a heurística: 
+  h(x) = o(x) − c(x) em que: o(x) é o número de peças a capturar no tabuleiro x; c(x) é o número de peças já capturadas no tabuleiro x
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc1MzI1NDMzLC02OTcyMDAxMDQsMTIwNj
-Y1NjIxMCwzMDQ5NjY4OTgsMTYzMDE4NTIzN119
+eyJoaXN0b3J5IjpbLTk1MDk0Mzc4MywtNjk3MjAwMTA0LDEyMD
+Y2NTYyMTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
