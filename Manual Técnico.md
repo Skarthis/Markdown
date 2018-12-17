@@ -275,8 +275,66 @@ Função que escolhe o tabuleiro que o utilizador escolheu através da interface
 ```
 
 Função que executa um jogo, depois de o utilizador ter feito as selecções necessárias na interface.
+
+
+##### Conjunto de funções que geram as estatísticas no ficheiro resultados
+```javascript
+(defun write-statistics-file (solution)
+  (let* ((start-time (first solution))
+         (solution-path (second solution))
+         (end-time (third solution))
+         (nboard (fourth solution))
+         (search (fifth solution)))
+            (with-open-file (file (get-results-path) :direction :output :if-exists :append :if-does-not-exist :create)
+                (ecase search
+                      ('BFS (write-bfsdfs-statistics file solution-path start-time end-time nboard 'BFS ))         
+                          ('DFS (let ((depth (sixth solution))) (write-bfsdfs-statistics file solution-path start-time end-time nboard 'DFS depth)))
+                      ('A* (write-a*-statistics file solution-path start-time end-time nboard 'A* ))
+                ))))
+
+
+(defun write-bfsdfs-statistics (stream solution-path start-time end-time nboard search &optional depth)
+  (progn 
+    (format stream "~%* Resolução do Tabuleiro ~a *" nboard)
+    (format stream "~%~t> Algoritmo: ~a " search)
+    (format stream "~%~t> Início: ~a:~a:~a" (first start-time) (second start-time) (third start-time))
+    (format stream "~%~t> Fim: ~a:~a:~a" (first end-time) (second end-time) (third end-time))
+    (format stream "~%~t> Número de nós gerados: ~a" (number-generated-nodes solution-path))
+    (format stream "~%~t> Número de nós expandidos: ~a" (number-expanded-nodes-bfsdfs solution-path))
+    (format stream "~%~t> Penetrância: ~F" (penetrance solution-path))
+    (format stream "~%~t> Fator de ramificação média ~F" (branching-factor solution-path))
+    (if (eq search 'DFS)
+        (format stream "~%~t> Profundidade máxima: ~a" depth))
+    (format stream "~%~t> Comprimento da solução ~a" (solution-length solution-path))
+    (format stream "~%~t> Estado Inicial")
+    (print-board (first (first solution-path)) stream)
+    (format stream "~%~t> Estado Final")
+    (print-board (solution-node solution-path) stream)
+  ))
+
+  
+(defun write-a*-statistics (stream solution-path start-time end-time nboard search)
+  (progn 
+    (format stream "~%* Resolução do Tabuleiro ~a *" nboard)
+    (format stream "~%~t> Algoritmo: ~a " search)
+    (format stream "~%~t> Início: ~a:~a:~a" (first start-time) (second start-time) (third start-time))
+    (format stream "~%~t> Fim: ~a:~a:~a" (first end-time) (second end-time) (third end-time))
+    (format stream "~%~t> Número de nós gerados: ~a" (number-generated-nodes solution-path))
+    (format stream "~%~t> Número de nós expandidos: ~a" (number-expanded-nodes-a* solution-path))
+    (format stream "~%~t> Penetrância: ~F" (penetrance solution-path))
+    (format stream "~%~t> Fator de ramificação média: ~F" (branching-factor solution-path))
+    (format stream "~%~t> Comprimento da solução ~a" (solution-length solution-path))
+    (format stream "~%~t> Estado Inicial")
+    (print-board (first (first solution-path)) stream)
+    (format stream "~%~t> Estado Final")
+    (print-board (solution-node solution-path) stream)
+  ))
+```
+### Resultados
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU4MTk2MTQ1LC02NzUwMzQ4NjgsMjAyOT
-EyNjI5LC05NTA5NDM3ODMsLTY5NzIwMDEwNCwxMjA2NjU2MjEw
-LDMwNDk2Njg5OCwxNjMwMTg1MjM3XX0=
+eyJoaXN0b3J5IjpbLTE5Njg1NTIyMTYsLTY3NTAzNDg2OCwyMD
+I5MTI2MjksLTk1MDk0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYy
+MTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
