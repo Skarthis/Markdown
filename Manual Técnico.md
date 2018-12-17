@@ -274,9 +274,9 @@ Função que escolhe o tabuleiro que o utilizador escolheu através da interface
 							  )))))))
 ```
 
-F
+Função que executa um jogo, depois de o utilizador ter feito as selecções necessárias na interface.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjI5MzIzMjQsLTY3NTAzNDg2OCwyMD
-I5MTI2MjksLTk1MDk0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYy
-MTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
+eyJoaXN0b3J5IjpbNjU4MTk2MTQ1LC02NzUwMzQ4NjgsMjAyOT
+EyNjI5LC05NTA5NDM3ODMsLTY5NzIwMDEwNCwxMjA2NjU2MjEw
+LDMwNDk2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
