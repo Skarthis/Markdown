@@ -145,8 +145,19 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
   ```
   
   Funções que geram os nós sucessores para os diferentes algoritmos de procura.
+
+##### Update-open
+```javascript
+(defun update-open (expanded-list open parent-node)
+  (mapcar #'(lambda(node)
+  (let (
+    (open-list (update-node node expanded-list)))
+     (if (null open-list) node 
+     (change-parent (car open-list) parent-node))))open))
+                             ```
+       
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NzQ0OTQ4NCwtOTUwOTQzNzgzLC02OT
+eyJoaXN0b3J5IjpbLTI3NjI2MTg0NSwtOTUwOTQzNzgzLC02OT
 cyMDAxMDQsMTIwNjY1NjIxMCwzMDQ5NjY4OTgsMTYzMDE4NTIz
 N119
 -->
