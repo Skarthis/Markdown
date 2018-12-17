@@ -15,9 +15,9 @@ o programa está dividido em 4 ficheiros:
 O objectivo do programa é efectuar e mostrar ao utilizador a sequência de jogadas para remover todas as pecas do tabuleiro.
 
 ### Puzzle
-Neste 
+Neste  ficheiro encontram-se as funções especificas ao jogo, tais 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDYyMTcwOCwxMjA2NjU2MjEwLDMwND
+eyJoaXN0b3J5IjpbMTI2NTM5NTc2OSwxMjA2NjU2MjEwLDMwND
 k2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
