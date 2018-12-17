@@ -114,8 +114,12 @@ estado_do_tabuleiro > < nó-pai > g h )
 `
 onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
 
-
+##### Heuristic-a
+```javascript
+(defun heuristic-a (node)
+  (- (count-pieces node) (-(count-pieces(get-origin-node node))(count-pieces node))))
+  ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NzM3MDY0LC02OTcyMDAxMDQsMTIwNj
-Y1NjIxMCwzMDQ5NjY4OTgsMTYzMDE4NTIzN119
+eyJoaXN0b3J5IjpbLTIwMTQxNDUyMDEsLTY5NzIwMDEwNCwxMj
+A2NjU2MjEwLDMwNDk2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
