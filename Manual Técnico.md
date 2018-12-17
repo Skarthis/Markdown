@@ -337,11 +337,14 @@ Estatísticas obtidas da execução dos algoritmos de procura com os vários pro
 |:-----|:------|:-----|:-----|:-----|:-----|:-----|:-----|
 | 1 | BFS | 24| 15 | 0.20833333 |1.5968559 | 0:55:0 | 0:55:0 |
 | 1 | DFS | 13 | 6 | 0.61538464 | 1.0852652 | 0:55:11 | 0:55:11 |
-| 1 |  A*|  |  |  |  |  |  |
+| 1 |  A*| 10 | 6 | 0.7 | 1.0852652 | 1:5:16 | 1:5:16 |
+|2|BFS| | | | | | |
+|2|DFS| | | | | | |
+|2|A*|40 |35 | | | 1:7:33 |  1:7:33|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNDM1ODI1OCwtNjc1MDM0ODY4LDIwMj
-kxMjYyOSwtOTUwOTQzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIx
-MCwzMDQ5NjY4OTgsMTYzMDE4NTIzN119
+eyJoaXN0b3J5IjpbLTEyNTAyNDc3ODAsLTY3NTAzNDg2OCwyMD
+I5MTI2MjksLTk1MDk0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYy
+MTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
