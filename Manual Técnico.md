@@ -178,11 +178,11 @@ Algoritmo de procura em largura. Recebe o nome da função geradora *expandFunct
        (dfs expandFunction max-depth (concatenate 'list expanded-list(cdr open))
 		(concatenate 'list closed chosen-node)))))))
 ```
-Algoritmo de procura em profundidade. Recebe o nome da função geradora _expandFunction_ , a profundidade máxima e uma lista com o nó inicial _(list node)_. O algoritmo começa por atribuir o nó corrente à lista de abertos e gera uma lista de sucessores, o critério de paragem do algoritmo é dado pela função _solutionp_ que verifica se um nó é solução. Caso não seja verificado o critério de paragem, o algoritmo é chamado recursivamente colocando o nó corrente na lista de fechados e concatenando à lista de abertos a lista de sucessores.
+Algoritmo de procura em profundidade. Recebe o nome da função geradora _expandFunction_ , a profundidade máxima e uma lista com o nó inicial _(list node)_. O algoritmo começa por atribuir o nó corrente à lista de abertos e gera uma lista de sucessores, o critério de paragem do algoritmo é dado pela função _solutionp_ que verifica se um nó é solução. Caso não seja verificado o critério de paragem, o algoritmo é chamado recursivamente colocando o nó corrente na lista de fechados e concatenando à lista de abertos a lista de sucessores, mas ordenando os sucessores em primeiro lugar. para além disso caso a profundidade máxima seja atingida não serão gerados n
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDkyNjgzNCwyMDI5MTI2MjksLTk1MD
-k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
-LDE2MzAxODUyMzddfQ==
+eyJoaXN0b3J5IjpbLTE1ODExODIxNDksMjAyOTEyNjI5LC05NT
+A5NDM3ODMsLTY5NzIwMDEwNCwxMjA2NjU2MjEwLDMwNDk2Njg5
+OCwxNjMwMTg1MjM3XX0=
 -->
