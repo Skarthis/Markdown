@@ -244,10 +244,39 @@ Função que lê os tabuleiros do ficheiro *problemas.dat*
                                  (list opt (nth(1- opt) boards-list))
                   )))))))
 ```
-Função que escolhe o tabuleiro que o utilizador escolheu através 
+Função que escolhe o tabuleiro que o utilizador escolheu através da interface para ser usado num jogo.
 
+##### Exec-search
+```javascript 
+(defun exec-search()
+;;Executa um algoritmo, dependendo da opcao escolhida"
+    (progn (read-algorithm-message)
+      (let ((opt (read)))
+           (cond ((not (numberp opt)) (progn (format t "Insira uma opção válida") (exec-search)))
+                 ((or (> opt 4) (< opt 0) ) (progn (format t "Insira uma opção válida") (exec-search)))
+                 ((eq opt 0) (start))         
+                 (T (let* ((board-node (read-board 'exec-search))
+                           (board (second board-node))
+                           (nboard (first board-node))
+                           (node (list (construct-node board nil))))
+                        (ecase opt
+                          (1 
+                             (let ((solution (list (current-time) (bfs 'expand-node node) (current-time) nboard 'BFS)))
+                               (progn (write-statistics-file solution) solution)))
+
+                          (2 (let* ((depth (read-depth))
+                                    (solution (list (current-time) (dfs 'expand-node depth node) (current-time) nboard 'DFS depth)))
+                               (progn (write-statistics-file solution) solution)))
+     
+                          (3  (let* ((heuristic (read-heuristic))
+                                    (solution (list (current-time) (A* 'expand-node* heuristic node) (current-time) nboard 'A*)))
+                              (progn (write-statistics-file solution) solution)))
+							  )))))))
+```
+
+F
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTcyNjEyNTYsLTY3NTAzNDg2OCwyMD
+eyJoaXN0b3J5IjpbLTExNjI5MzIzMjQsLTY3NTAzNDg2OCwyMD
 I5MTI2MjksLTk1MDk0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYy
 MTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
