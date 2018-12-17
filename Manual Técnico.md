@@ -80,8 +80,22 @@ Função que efectua uma jogada no tabuleiro, remove as peças na posição *l c
    ((= (cell l c board) 0)(possible-plays-aux board l (1- c)))
    (t (cons (list l c)(possible-plays-aux board l (1- c))))))
    ```
-Função que retorna uma
+Função que retorna uma lista de posições onde é possível efectuar uma jogada.
+
+##### Count-pieces
+```javascript
+(defun count-pieces (node)
+  (+ (count-pieces-aux(first(get-node-state node)))
+     (count-pieces-aux(second(get-node-state node)))))
+
+(defun count-pieces-aux (lst &optional (n 0))
+  (cond
+   ((= 6 n)0)
+   (t (+ (nth n lst)(count-pieces-aux lst (1+ n))))))
+   ```
+
+Função que 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI5NzYzMDc2LDEyMDY2NTYyMTAsMzA0OT
-Y2ODk4LDE2MzAxODUyMzddfQ==
+eyJoaXN0b3J5IjpbLTY5NzIwMDEwNCwxMjA2NjU2MjEwLDMwND
+k2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
