@@ -161,7 +161,7 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
         (bfs expandFunction (concatenate 'list (cdr open) (remove-nil (remove-duplicated expanded-list open closed)))
 			(concatenate 'list closed (list chosen-node)))))))))
 ```
-Algoritmo de procura em largura. Recebe o nome da função geradora *expandFunction* e uma lista com o 
+Algoritmo de procura em largura. Recebe o nome da função geradora *expandFunction* e uma lista com o nó inicial *(list node)*. O algoritmo começa por atribuir o nó corrente à l
 
 ##### Depth-first search
 
@@ -182,7 +182,7 @@ Algoritmo de procura em profundidade.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODE4NDE5MiwyMDI5MTI2MjksLTk1MD
+eyJoaXN0b3J5IjpbMTgyMzcxNjEyNywyMDI5MTI2MjksLTk1MD
 k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
 LDE2MzAxODUyMzddfQ==
 -->
