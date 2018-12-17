@@ -244,10 +244,10 @@ Função que lê os tabuleiros do ficheiro *problemas.dat*
                                  (list opt (nth(1- opt) boards-list))
                   )))))))
 ```
-Função que 
+Função que escolhe o tabuleiro que o utilizador escolheu através 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDU2OTc5MDIsLTY3NTAzNDg2OCwyMD
+eyJoaXN0b3J5IjpbLTEwOTcyNjEyNTYsLTY3NTAzNDg2OCwyMD
 I5MTI2MjksLTk1MDk0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYy
 MTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
