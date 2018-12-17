@@ -94,8 +94,8 @@ Função que retorna uma lista de posições onde é possível efectuar uma joga
    (t (+ (nth n lst)(count-pieces-aux lst (1+ n))))))
    ```
 
-Função que 
+Função que
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NzIwMDEwNCwxMjA2NjU2MjEwLDMwND
-k2Njg5OCwxNjMwMTg1MjM3XX0=
+eyJoaXN0b3J5IjpbLTE0ODYzMTY2NDQsLTY5NzIwMDEwNCwxMj
+A2NjU2MjEwLDMwNDk2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
