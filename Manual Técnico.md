@@ -197,11 +197,19 @@ Algoritmo de procura em profundidade. Recebe o nome da função geradora _expand
        (A* expandFunction heuristic new-open (remove-duplicated-aux (concatenate 'list closed (list chosen-node)) 
 												updated-closed) (1+ expanded-nodes)))))))	
 ```
-O algoritmo A* tem uma estrutura similar aos anteriores. Sendo a diferença entre o A*, que é um algoritmo de procura informada, e os anteriores que o A* as
+O algoritmo A* tem uma estrutura similar aos anteriores. Sendo a diferença entre o A*, que é um algoritmo de procura informada, e os anteriores que o A* associa um valor heurístico a cada nó e opta por expandir em primeiro lugar o nó de menor custo.
 
-
+```javascript
+(defun get-lowest-value (open)
+  (cond
+   ((= (length open)1)(car open))
+   (t (let ((lowest-node (get-lowest-value (rest open))))
+        (if (< (get-node-value (car open))(get-node-value lowest-node))(car open)
+          lowest-node)))))
+```
+Função usada pelo A* para escolher o nó de menor custo numa dada lista.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNTI0MjQ5MSwyMDI5MTI2MjksLTk1MD
-k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
-LDE2MzAxODUyMzddfQ==
+eyJoaXN0b3J5IjpbMzc0ODQ2MzA0LDIwMjkxMjYyOSwtOTUwOT
+QzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIxMCwzMDQ5NjY4OTgs
+MTYzMDE4NTIzN119
 -->
