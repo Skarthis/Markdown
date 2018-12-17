@@ -25,8 +25,11 @@ Neste  ficheiro encontram-se as funções especificas ao jogo, tais como a distr
    (t(cons (next-position l c)(distribute (1- n)
    (first(next-position l c))(second(next-position l c)))))))
 ```
-Função que recebe uma posicao no tabuleiro, linha coluna *l c* e um *n* que corresponde ao numero de peças a jogar
+Função que recebe uma posição no tabuleiro, linha coluna *l c* e um *n* que corresponde ao numero de peças a jogar, e retorna uma lista com todos as posições *(l c)* que devem ser incrementadas.
+
+##### Increment
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTcyMzQ2MSwxMjA2NjU2MjEwLDMwND
+eyJoaXN0b3J5IjpbLTk3ODQ0NTUwMCwxMjA2NjU2MjEwLDMwND
 k2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
