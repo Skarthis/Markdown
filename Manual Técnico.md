@@ -39,8 +39,20 @@ Função que recebe uma posição no tabuleiro, linha coluna *l c* e um *n* que 
   (replace-a col lin lst (1+ (cell lin col lst))))
   ```
 
-Funcão que recebe o tabuleiro *board* e a lista retornada peda função *distribute*
+Função que recebe o tabuleiro *board* e a lista retornada pela função *distribute* e incrementa todas as posições na lista.
+
+##### Next-position
+```javascript
+(defun next-position (l c)
+  (cond
+  ((and (= l 0)(= c 0))(list 1 0))
+  ((and (= l 1)(= c 5))(list 0 5))
+  ((and (= l 0)(and (> c 0)(<= c 5)))(list l (1- c)))
+  ((and (= l 1)(and (>= c 0)(< c 5)))(list l (1+ c)))))
+```
+Função que 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjI4NDc4MDAsMTIwNjY1NjIxMCwzMD
-Q5NjY4OTgsMTYzMDE4NTIzN119
+eyJoaXN0b3J5IjpbMTU1MjYzMjkxMywxMjA2NjU2MjEwLDMwND
+k2Njg5OCwxNjMwMTg1MjM3XX0=
 -->
