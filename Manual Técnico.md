@@ -335,11 +335,13 @@ Estatísticas obtidas da execução dos algoritmos de procura com os vários pro
 
 | Tabuleiro | Algoritmo | Nós Gerados | Nós Expandidos | Penetrância | Fator Ramificação | Inicio | Fim |
 |:-----|:------|:-----|:-----|:-----|:-----|:-----|:-----|
-|1
+| 1 | BFS |  |  |  |  | 0:55:0 |  |
+| 1 | DFS |  |  |  |  |  |  |
+| 1 |  A*|  |  |  |  |  |  |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyODY4MTIyNCwtNjc1MDM0ODY4LDIwMj
+eyJoaXN0b3J5IjpbMTM2ODE3NjE2MSwtNjc1MDM0ODY4LDIwMj
 kxMjYyOSwtOTUwOTQzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIx
 MCwzMDQ5NjY4OTgsMTYzMDE4NTIzN119
 -->
