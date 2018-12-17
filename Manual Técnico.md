@@ -333,10 +333,11 @@ Função que executa um jogo, depois de o utilizador ter feito as selecções ne
 ### Resultados
 Estatísticas obtidas da execução dos algoritmos de procura com os vários problemas, a heurística usada foi a fornecida no enunciado.
 
-| Tabuleiro | Algoritmo | Nós Gerados | Nós Expandi
+| Tabuleiro | Algoritmo | Nós Gerados | Nós Expandidos | Penetrância | Fator Ramificação | Inicio | Fim |
+|:-----:|:------:|:-----:|:-----:|:-----:|:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MTM3MzI5MSwtNjc1MDM0ODY4LDIwMj
-kxMjYyOSwtOTUwOTQzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIx
-MCwzMDQ5NjY4OTgsMTYzMDE4NTIzN119
+eyJoaXN0b3J5IjpbLTEwMDA0MjI4MTYsLTY3NTAzNDg2OCwyMD
+I5MTI2MjksLTk1MDk0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYy
+MTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
