@@ -213,9 +213,15 @@ Função usada pelo A* para escolher o nó de menor custo numa dada lista de abe
 Este ficheiro constitui a interacção com o utilizador, e a criação de estatísticas gravadas em *resultados.dat*. Assim como ler os problemas presentes no ficheiro *problemas.dat*.
 
 
-
+##### Get-problems-path
+```javascript
+(defun get-problems-path()
+"path (C:\lisp\problemas.dat)"
+    (make-pathname :host "c" :directory '(:absolute "ia") :name "problemas" :type "dat"))
+```
+Função que define o __path__ para o ficheiro *problemas.dat*.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MzI4Mjc1MywyMDI5MTI2MjksLTk1MD
+eyJoaXN0b3J5IjpbLTY3NTAzNDg2OCwyMDI5MTI2MjksLTk1MD
 k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
 LDE2MzAxODUyMzddfQ==
 -->
