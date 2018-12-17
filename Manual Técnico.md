@@ -126,11 +126,26 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
  - o(x) é o número de peças a capturar no tabuleiro x
  - c(x) é o número de peças já capturadas no tabuleiro x
 
-#####
- 
+##### Expand-node
+```javascript
+(defun expand-node (node)
+  (expand-node-aux node (possible-plays(get-node-state node))))
   
+
+(defun expand-node-aux (node lst)
+  (cond
+   ((null lst)nil)
+   (t (cons (construct-node(play (first(car lst))
+(second(car lst)) (get-node-state node)) node 
+(1+ (get-node-g node)))
+(expand-node-aux node (rest lst))))))
+
+(defun expand-node* (chosen-node heuristic)
+  (mapcar #'(lambda (node) (change-value-h node (funcall heuristic node))) (expand-node chosen-node)))
+ 
+  ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4OTE2ODg5NywtOTUwOTQzNzgzLC02OT
-cyMDAxMDQsMTIwNjY1NjIxMCwzMDQ5NjY4OTgsMTYzMDE4NTIz
-N119
+eyJoaXN0b3J5IjpbLTE5NDQ4NjY0NzIsLTk1MDk0Mzc4MywtNj
+k3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4LDE2MzAxODUy
+MzddfQ==
 -->
