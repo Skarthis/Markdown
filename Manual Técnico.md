@@ -93,8 +93,14 @@ Função que retorna uma lista de posições onde é possível efectuar uma joga
    ((= 6 n)0)
    (t (+ (nth n lst)(count-pieces-aux lst (1+ n))))))
    ```
-
 Função que conta todas as peças existentes no tabuleiro actual.
+##### Get-solution-states
+```javascript
+(defun get-solution-states (node)
+  (cond 
+   ((null (get-node-parent node))(list (car node)))
+   (t (append (get-solution-states (get-node-parent node)) (list (car node))))))
+```
 
 ### Procura
 
@@ -107,6 +113,6 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDMyNDI1NSwtNjk3MjAwMTA0LDEyMD
+eyJoaXN0b3J5IjpbLTU5MjgwNjE5NywtNjk3MjAwMTA0LDEyMD
 Y2NTYyMTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
