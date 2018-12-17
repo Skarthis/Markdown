@@ -12,9 +12,9 @@ o programa está dividido em 4 ficheiros:
  - projecto.lisp - interacção com o utilizador
  - problemas.dat - ficheiro onde se encontram os problemas
 
-O objectivo do programa é efectuar e mostrar ao utilizador a sequência de jogadas
+O objectivo do programa é efectuar e mostrar ao utilizador a sequência de jogadas para remover todas as pecas do tabuleiro
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0OTgyNjcwMywzMDQ5NjY4OTgsMTYzMD
+eyJoaXN0b3J5IjpbMTIwNjY1NjIxMCwzMDQ5NjY4OTgsMTYzMD
 E4NTIzN119
 -->
