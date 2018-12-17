@@ -158,11 +158,10 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
             (expanded-list (funcall expandFunction chosen-node)))
       (if (solutionp chosen-node)
        (list (get-solution-states chosen-node) (length open) (length closed))
-		;; sets sucessors in open and sets current node to closed
         (bfs expandFunction (concatenate 'list (cdr open) (remove-nil (remove-duplicated expanded-list open closed)))
 			(concatenate 'list closed (list chosen-node)))))))))
 ```
-Algoritmo de procura em largura.
+Algoritmo de procura em largura. Recebe o nome da função geradora *expandFunction* e uma lista com o 
 
 ##### Depth-first search
 
@@ -176,7 +175,6 @@ Algoritmo de procura em largura.
             (expanded-list (funcall expandFunction chosen-node)))
       (if (solutionp chosen-node)
         (list (get-solution-states chosen-node) (calculate-node-depth chosen-node) (length open) (length closed))
-		;; sets sucessors in open and sets current node to closed
        (dfs expandFunction max-depth (concatenate 'list expanded-list(cdr open))
 		(concatenate 'list closed chosen-node)))))))
 ```
@@ -184,7 +182,7 @@ Algoritmo de procura em profundidade.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg5MDI5MTU3LDIwMjkxMjYyOSwtOTUwOT
-QzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIxMCwzMDQ5NjY4OTgs
-MTYzMDE4NTIzN119
+eyJoaXN0b3J5IjpbMTUyODE4NDE5MiwyMDI5MTI2MjksLTk1MD
+k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
+LDE2MzAxODUyMzddfQ==
 -->
