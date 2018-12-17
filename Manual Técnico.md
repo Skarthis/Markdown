@@ -178,11 +178,28 @@ Algoritmo de procura em largura. Recebe o nome da função geradora *expandFunct
        (dfs expandFunction max-depth (concatenate 'list expanded-list(cdr open))
 		(concatenate 'list closed chosen-node)))))))
 ```
-Algoritmo de procura em profundidade. Recebe o nome da função geradora _expandFunction_ , a profundidade máxima e uma lista com o nó inicial _(list node)_. O algoritmo começa por atribuir o nó corrente à lista de abertos e gera uma lista de sucessores, o critério de paragem do algoritmo é dado pela função _solutionp_ que verifica se um nó é solução. Caso não seja verificado o critério de paragem, o algoritmo é chamado recursivamente colocando o nó corrente na lista de fechados e concatenando à lista de abertos a lista de sucessores, mas ordenando os sucessores em primeiro lugar. para além disso caso a profundidade máxima seja atingida não serão gerados n
+Algoritmo de procura em profundidade. Recebe o nome da função geradora _expandFunction_ , a profundidade máxima e uma lista com o nó inicial _(list node)_. O algoritmo começa por atribuir o nó corrente à lista de abertos e gera uma lista de sucessores, o critério de paragem do algoritmo é dado pela função _solutionp_ que verifica se um nó é solução. Caso não seja verificado o critério de paragem, o algoritmo é chamado recursivamente colocando o nó corrente na lista de fechados e concatenando à lista de abertos a lista de sucessores, mas ordenando os sucessores em primeiro lugar. Para além disso não serão gerados quaisquer nós com profundidade que ultrapasse a profundidade máxima dada.
 
+##### A* 
+```javascript
+(defun A*(expandFunction heuristic open &optional (closed '()) (expanded-nodes 0))
+  (cond
+   ((= (length open) 0) nil)
+   (t
+     (let* ((chosen-node (get-lowest-value open))
+            (expanded-list (funcall expandFunction chosen-node heuristic))
+            (updated-closed (update-closed expanded-list closed chosen-node))
+            (updated-open (update-open expanded-list (cdr open) chosen-node))
+            (new-open (remove-nil (append updated-open (remove-duplicated-aux expanded-list updated-open) updated-closed))))
+      (if (solutionp chosen-node)
+       (list (get-solution-states chosen-node) (length open) (length closed) expanded-nodes)
+        ;;chama a*, colocando os sucessores em open e poe o primeiro elemento de open em closed
+       (A* expandFunction heuristic new-open (remove-duplicated-aux (concatenate 'list closed (list chosen-node)) 
+												updated-closed) (1+ expanded-nodes)))))))	
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODExODIxNDksMjAyOTEyNjI5LC05NT
+eyJoaXN0b3J5IjpbLTE1NDc5NzE2OTAsMjAyOTEyNjI5LC05NT
 A5NDM3ODMsLTY5NzIwMDEwNCwxMjA2NjU2MjEwLDMwNDk2Njg5
 OCwxNjMwMTg1MjM3XX0=
 -->
