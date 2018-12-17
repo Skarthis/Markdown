@@ -343,10 +343,10 @@ Estatísticas obtidas da execução dos algoritmos de procura com os vários pro
 |2|A*|40 |35 |0.425 | 1.0852652| 1:7:33 |  1:7:33|
 |3 |BFS| 3983|1154 |0.0017574693 |3.0747845 |0:55:3 |0:55:4 |
 |3 |DFS| 28|18 |0.39285713 |1.1421085 |0:55:28 |0:55:28 |
-|3 |A*| | | | | | |
+|3 |A*|15 | 6|0.46666667 | 1.198952| 1:8:0|1:8:0 |
 |4 |BFS| | | | | | |
 |4 |DFS|213|169 |0.2112676 |1.0852652 |0:55:39 |0:55:39 |
-|4 |A*| | | | | | |
+|4 |A*|147 |60 |0.27891156 | 1.0284217|  1:8:14|  1:8:14|
 |5 |BFS| | | | | | |
 |5 |DFS|539 |435| 0.19480519|1.0284217 |0:56:21 |0:56:21 |
 |5 |A*| | | | | | |
@@ -354,12 +354,12 @@ Estatísticas obtidas da execução dos algoritmos de procura com os vários pro
 |6 |DFS|364 |291 | 0.2032967|1.0284217 |0:56:48 |0:56:48 |
 |6 |A*| | | | | | |
 |7 |BFS| | | | | | |
-|7 |DFS| | | | | | |
+|7 |DFS|618 |503 |0.18770227 |1.0284217 |  0:56:59| 0:56:59 |
 |7 |A*| | | | | | |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4ODU0ODAwLC02NzUwMzQ4NjgsMjAyOT
-EyNjI5LC05NTA5NDM3ODMsLTY5NzIwMDEwNCwxMjA2NjU2MjEw
-LDMwNDk2Njg5OCwxNjMwMTg1MjM3XX0=
+eyJoaXN0b3J5IjpbLTEwMTM4NjczNjgsLTY3NTAzNDg2OCwyMD
+I5MTI2MjksLTk1MDk0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYy
+MTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
