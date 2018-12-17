@@ -207,9 +207,13 @@ O algoritmo A* tem uma estrutura similar aos anteriores. Sendo a diferença entr
         (if (< (get-node-value (car open))(get-node-value lowest-node))(car open)
           lowest-node)))))
 ```
-Função usada pelo A* para escolher o nó de menor custo numa dada lista.
+Função usada pelo A* para escolher o nó de menor custo numa dada lista de abertos.
+
+### Projecto
+Este ficheiro constitui a interacção com o utilizador 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc0ODQ2MzA0LDIwMjkxMjYyOSwtOTUwOT
-QzNzgzLC02OTcyMDAxMDQsMTIwNjY1NjIxMCwzMDQ5NjY4OTgs
-MTYzMDE4NTIzN119
+eyJoaXN0b3J5IjpbMTkyNzM4NTEyOSwyMDI5MTI2MjksLTk1MD
+k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
+LDE2MzAxODUyMzddfQ==
 -->
