@@ -220,8 +220,18 @@ Este ficheiro constitui a interacção com o utilizador, e a criação de estat�
     (make-pathname :host "c" :directory '(:absolute "ia") :name "problemas" :type "dat"))
 ```
 Função que define o __path__ para o ficheiro *problemas.dat*.
+
+##### Read-boards
+```javascript
+(defun read-boards ()
+   (with-open-file (file (get-problems-path) :if-does-not-exist nil)
+     (do ((result nil (cons next result))
+        	(next (read file nil 'eof) (read file nil 'eof)))
+                ((equal next 'eof) (reverse result)))))
+```
+Funcção que le 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NTAzNDg2OCwyMDI5MTI2MjksLTk1MD
-k0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYyMTAsMzA0OTY2ODk4
-LDE2MzAxODUyMzddfQ==
+eyJoaXN0b3J5IjpbLTE5MzQyMjE1MjEsLTY3NTAzNDg2OCwyMD
+I5MTI2MjksLTk1MDk0Mzc4MywtNjk3MjAwMTA0LDEyMDY2NTYy
+MTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
 -->
