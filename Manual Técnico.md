@@ -99,8 +99,11 @@ Função que conta todas as peças existentes no tabuleiro actual.
 (defun get-solution-states (node)
   (cond 
    ((null (get-node-parent node))(list (car node)))
-   (t (append (get-solution-states (get-node-parent node)) (list (car node))))))
+   (t (append (get-solution-states (get-node-parent node))
+    (list (car node))))))
 ```
+Função que retorna todos os tabuleiros desde o nó *node* até ao nó de origem.
+
 
 ### Procura
 
@@ -113,6 +116,6 @@ onde *g* corresponde à profundidade, e *h* ao valor heurístico do nó.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MjgwNjE5NywtNjk3MjAwMTA0LDEyMD
-Y2NTYyMTAsMzA0OTY2ODk4LDE2MzAxODUyMzddfQ==
+eyJoaXN0b3J5IjpbLTY1NzM3MDY0LC02OTcyMDAxMDQsMTIwNj
+Y1NjIxMCwzMDQ5NjY4OTgsMTYzMDE4NTIzN119
 -->
